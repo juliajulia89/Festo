@@ -1,0 +1,52 @@
+
+$primary-color: #c42521;
+$bg-color: #121212;
+$dark-gray: #9aa0a6;
+
+$text-sm: 0.875rem;
+$text-md: 1rem;
+$text-lg: 1.125rem;
+
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+$border-radius: 5em;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: $bg-color;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.back-top {
+  font-size: 1.5rem;
+  position: sticky;
+  bottom: 2rem;
+  left: 90%;
+}

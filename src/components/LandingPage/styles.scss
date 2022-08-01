@@ -1,0 +1,41 @@
+@import '../../index.scss';
+
+.section {
+  position: relative;
+}
+.sectionTittle {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.6em 1em;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: $text-lg;
+    &--opacity {
+      opacity: 0.7;
+    }
+     a:hover .sectionTittle, a:hover .sectionImg {
+        opacity: 1;
+    }
+  }
+ .sectionImg {
+    filter: brightness(80%);
+      a:hover .sectionTittle, a:hover .sectionImg {
+        opacity: 1;
+    }
+    
+  }
+   
+  
+
+
+@media screen and (min-width: $bp-tablet) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .sectionTittle {
+      font-size: 2rem;
+    }
+  }
+}

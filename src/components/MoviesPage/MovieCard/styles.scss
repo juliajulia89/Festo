@@ -1,0 +1,40 @@
+@import '../../../index.scss';
+
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  justify-content: center;
+  gap: 2em;
+  .movieCard {
+    width: 288px;
+    position: relative;
+    cursor: pointer;
+    .movieInfo {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 0 0.75em;
+      font-size: $text-sm;
+      background-color: rgba(0, 0, 0, 0.6);
+      &Title {
+        margin: 0.5em 0;
+        text-align: center;
+      }
+      &Description {
+        margin: 0 0 1em;
+        &--mg-bt {
+          margin-bottom: 0.25em;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $bp-tablet) {
+    & {
+      grid-template-columns: repeat(auto-fill, 227px);
+      gap: 1em;
+    }
+    .movieCard {
+      width: 227px;
+    }
+  }
+}

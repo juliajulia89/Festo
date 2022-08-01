@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.footer {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  &Logo {
+    width: 10em;
+  }
+  &List {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 0.7em;
+    &Item {
+      list-style: none;
+      font-size: $text-sm;
+    }
+  }
+  &App {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    &Img {
+      width: 9rem;
+    }
+  }
+  &Copyright {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: $text-sm;
+    color: $dark-gray;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    & {
+      flex-direction: row;
+      justify-content: space-around;
+      &Top {
+        text-align: center;
+      }
+      &Logo {
+        width: 12rem;
+      }
+      &List {
+        margin: 1rem 0 0 0;
+        flex-direction: row;
+        gap: 1.5em;
+      }
+      &Copyright {
+        margin: 1rem 0 0 0;
+      }
+    }
+  }
+}
